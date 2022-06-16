@@ -16,7 +16,7 @@ namespace parentalContribution
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TotalContrib());
+            Application.Run(new AddStudent());
         }
     }
 }

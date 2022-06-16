@@ -85,10 +85,10 @@ namespace parentalContribution
         {
             double totalContribution = getSchool().calculateTotalContribution();
             int youngestStudentAge = getSchool().getYoungestStudent().calculateAge();
-            int[] childrenPerCategory = new int[3];
+            List<int> childrenPerCategory = new List<int>();
             foreach (Category category in getSchool().Categories)
             {
-                childrenPerCategory.Append(category.Students.Count);
+                childrenPerCategory.Add(category.Students.Count);
             }
             infoLabel.Text += $"Total contribution: {totalContribution}\n";
             infoLabel.Text += $"Youngest student's age: {youngestStudentAge}\n";

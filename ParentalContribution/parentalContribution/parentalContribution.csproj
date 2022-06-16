@@ -89,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Category.cs" />
     <Compile Include="Contrib.cs">
       <SubType>Form</SubType>
@@ -97,6 +103,12 @@
       <DependentUpon>Contrib.cs</DependentUpon>
     </Compile>
     <Compile Include="School.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="AddStudent.cs">
       <SubType>Form</SubType>
@@ -112,6 +124,9 @@
     <Compile Include="TotalContrib.Designer.cs">
       <DependentUpon>TotalContrib.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Contrib.resx">
       <DependentUpon>Contrib.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +142,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TotalContrib.resx">
       <DependentUpon>TotalContrib.cs</DependentUpon>
     </EmbeddedResource>

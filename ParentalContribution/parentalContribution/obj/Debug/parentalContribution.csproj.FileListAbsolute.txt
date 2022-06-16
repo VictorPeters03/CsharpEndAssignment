@@ -34,3 +34,5 @@ C:\xampp\htdocs\school\Jaar 1\Periode 4\C#\Eindopdracht\CsharpEndAssignment\Pare
 C:\xampp\htdocs\school\Jaar 1\Periode 4\C#\Eindopdracht\CsharpEndAssignment\ParentalContribution\parentalContribution\obj\Debug\parentalContribution.contrib.resources
 C:\xampp\htdocs\school\Jaar 1\Periode 4\C#\Eindopdracht\CsharpEndAssignment\ParentalContribution\parentalContribution\obj\Debug\parentalContribution.AddStudent.resources
 C:\xampp\htdocs\school\Jaar 1\Periode 4\C#\Eindopdracht\CsharpEndAssignment\ParentalContribution\parentalContribution\obj\Debug\parentalContribution.TotalContrib.resources
+C:\xampp\htdocs\school\Jaar 1\Periode 4\C#\Eindopdracht\CsharpEndAssignment\ParentalContribution\parentalContribution\obj\Debug\parentalContribution.AboutBox1.resources
+C:\xampp\htdocs\school\Jaar 1\Periode 4\C#\Eindopdracht\CsharpEndAssignment\ParentalContribution\parentalContribution\obj\Debug\parentalContribution.SplashScreen.resources
