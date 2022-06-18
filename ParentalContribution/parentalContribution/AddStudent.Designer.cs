@@ -58,6 +58,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.contextMenuStrip2.SuspendLayout();
             this.TotalContrib1.SuspendLayout();
             this.GetContribution1.SuspendLayout();
@@ -72,9 +74,10 @@
             this.toolStripContrib,
             this.toolStripTotalContribution,
             this.openToolStripMenuItem,
-            this.closeToolStripMenuItem});
+            this.closeToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(188, 114);
+            this.contextMenuStrip2.Size = new System.Drawing.Size(188, 136);
             // 
             // toolStripAddStudent
             // 
@@ -322,6 +325,13 @@
             this.tabControl1.Size = new System.Drawing.Size(775, 443);
             this.tabControl1.TabIndex = 12;
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.aboutToolStripMenuItem.Text = "about";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,6 +382,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
     }
 }
 

@@ -110,6 +110,7 @@ namespace parentalContribution
             return this.totalContrib;
         }
 
+        //addstudent page
         private void submit_Click(object sender, EventArgs e)
         {
             try
@@ -143,22 +144,6 @@ namespace parentalContribution
         private School getSchool()
         {
             return this.deKubus;
-        }
-
-        private void toolStripAbout_Click(object sender, EventArgs e)
-        {
-            AboutBox1 about = new AboutBox1();  
-            about.Show();
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            contextMenuStrip2.Show();
-        }
-
-        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            contextMenuStrip2.Hide();
         }
 
 
@@ -209,7 +194,7 @@ namespace parentalContribution
         {
             Show();
             WindowState = FormWindowState.Normal;
-            notifyIcon1.Visible = false;
+            //notifyIcon1.Visible = false;
         }
 
         private void hideApp()
@@ -218,20 +203,46 @@ namespace parentalContribution
             notifyIcon1.Visible = true;
         }
 
+        //about button in notifymenu
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 about = new AboutBox1();
+            about.Show();
+        }
+
+        //open button in notifymenu
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip2.Show();
+        }
+
+        //close button in notifymenu
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip2.Hide();
+        }
+
+        //add student button in notifymenu
         private void toolStripAddStudent_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["AddStudent1"];
+            showApp();
         }
 
+        //contribution button in notifymenu
         private void toolStripContrib_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["GetContribution1"];
+            showApp();
         }
 
+        //totalcontrib button in notifymenu
         private void AddStudent_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TotalContrib1"];
+            showApp();
         }
+
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -243,9 +254,11 @@ namespace parentalContribution
             hideApp();
         }
 
+        //total contribution in notifymenu
         private void toolStripTotalContribution_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabControl1.TabPages["TotalContrib1"];
+            showApp();
         }
     }
 }
